@@ -1,5 +1,6 @@
 'use client'
 
+import { Header } from '@/components/layout'
 import { FCC } from '@/core/types/common.type'
 import { memo } from 'react'
 import { Toaster } from 'sonner'
@@ -7,7 +8,8 @@ import { Toaster } from 'sonner'
 const LayoutProvider: FCC = ({ children }) => {
     return (
         <>
-            <div className="flex h-screen w-full">
+            <div className="bg-background flex h-full flex-col">
+                <Header />
                 <main className="max-w-full flex-1">{children}</main>
                 <Toaster
                     theme="dark"

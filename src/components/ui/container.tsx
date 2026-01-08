@@ -20,7 +20,7 @@ function Container<T extends ValidElement>({
 }: { as?: T } & Omit<ComponentPropsWithoutRef<T>, 'as'>) {
     const Component = as ?? 'div'
 
-    return <Component className={cn('mx-auto w-full max-w-[1440px] px-3 md:px-6', className)} {...props} />
+    return <Component className={cn('mx-auto w-full max-w-[2160px] px-3 md:px-6', className)} {...props} />
 }
 
 export default Container
