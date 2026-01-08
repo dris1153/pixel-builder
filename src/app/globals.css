@@ -4,30 +4,9 @@
 @import './custom-class.css';
 
 :root {
-    --font-roboto: Roboto, sans-serif;
-    --background: #fdfdfd;
-    --foreground: #ffffff;
-    --primary: #16181c;
-    --primary-foreground: #fdfdfd;
-    --primary-foreground-light: #80828d;
-    --secondary: #efefef;
-    --secondary-light: #f4f4f4;
-    --secondary-foreground: #16181c;
-    --secondary-foreground-light: #9c9fa6;
-    --tertiary: #ffe4bd;
-    --tertiary-light: #ffeed5;
-    --tertiary-foreground: #fb7b14;
-    --tertiary-foreground-light: #fda049;
-    --success: #059654;
-    --success-light: #34d382;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --error: #d23043;
-    --error-light: #d2304314;
-    /* custom-proerty */
-    --table-border: #e9e9e9;
-    --sidebar-width: 16.25rem; /* 260px */
-    --green: #21bd77;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Space Grotesk', sans-serif;
 }
 
 @theme {
@@ -53,43 +32,11 @@
 }
 
 @theme inline {
-    --font-roboto: var(--font-roboto);
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-primary: var(--primary);
-    --color-primary-foreground: var(--primary-foreground);
-    --color-primary-foreground-light: var(--primary-foreground-light);
-    --color-secondary: var(--secondary);
-    --color-secondary-light: var(--secondary-light);
-    --color-secondary-foreground: var(--secondary-foreground);
-    --color-secondary-foreground-light: var(--secondary-foreground-light);
-    --color-tertiary: var(--tertiary);
-    --color-tertiary-light: var(--tertiary-light);
-    --color-tertiary-foreground: var(--tertiary-foreground);
-    --color-tertiary-foreground-light: var(--tertiary-foreground-light);
-    --color-success: var(--success);
-    --color-success-light: var(--success-light);
-    --color-info: var(--info);
-    --color-warning: var(--warning);
-    --color-error: var(--error);
-    --color-error-light: var(--error-light);
-    --color-table-border: var(--table-border);
-    --color-green: var(--green);
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+    --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #fdfdfd;
-        --foreground: #16181c;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --background: #fdfdfd;
-        --foreground: #16181c;
-    }
-}
 *,
 *::before,
 *::after {
@@ -105,23 +52,11 @@
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: var(--font-roboto);
+    font-family: var(--font-sans);
 }
 
 img {
     user-select: none;
-}
-
-.bg-button-linear {
-    background-image: var(--button-linear);
-}
-
-.bg-navbar-mobile {
-    background: linear-gradient(92.29deg, #181626 0.4%, #312f43 97.68%);
-}
-
-.bg-black-gradient {
-    background: var(--black-gradient);
 }
 
 .no-scrollbar::-webkit-scrollbar {
